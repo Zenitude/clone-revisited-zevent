@@ -1,0 +1,165 @@
+/* Associations Global*/
+
+.mainAssociations
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contentTabs
+{
+    width: 100%;
+    text-align: justify;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+/* Buttons Tabs */
+
+.mainAssociations .buttonTabs
+{
+    text-align: center;
+}
+.mainAssociations .buttonTabs button
+{
+    background-color: transparent;
+    min-width: 75px;
+    height: 40px;
+    margin: 5px;
+    color: var(--textPrimary);
+    border-color: var(--textPrimary);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Titles */
+
+h2, h3
+{
+    text-align: center;
+}
+
+.contentTabs article article h4
+{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+
+/* Tabs */
+
+.contentTabs section
+{
+    display: none;
+}
+
+.contentTabs section.activeTabs
+{
+    display: block;
+}
+
+/* Associations in numbers */
+
+.contentTabs article article
+{
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contentTabs article article p
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Images */
+
+.contentTabs figure
+{
+    margin: 10px 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentTabs img
+{
+    width: 150px;
+}
+
+.lpoMosaique figure
+{
+    flex-direction: column;
+}
+
+.lpoMosaique figure
+{
+    width: 50%;
+}
+
+.lpoMosaique figure img
+{
+    width: 100%;
+}
+
+/* Videos */
+
+.contentTabs video
+{
+    width: 100%;
+    height: 350px;
+}
+
+/* Links */
+
+.linkSite
+{
+    display: inline-block;
+    text-decoration: none;
+    max-width: 200px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    background-color: var(--textSecondary);
+    color: var(--textPrimary);
+    margin: 0px auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contentTabs section div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentTabs article div a
+{
+    margin: 5px 15px;
+}
+
+/* Listes */
+.contentTabs li
+{
+    margin: 15px 0;
+}

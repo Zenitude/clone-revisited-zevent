@@ -1,0 +1,180 @@
+@media all and (max-width: 1440px) {
+    
+    .clips 
+    {
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+    .card
+    {
+        width: 300px;
+    }
+    
+}
+
+@media all and (max-width: 1280px)
+{
+    .text-content
+    {
+        width: 50%;
+    }
+
+    .historics .events
+    {
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    .streamers div
+    {
+        width: 60%;
+    }
+
+    .slideBar
+    {
+        display: none;
+        position: absolute;
+    }
+
+    .containerClips main
+    {
+        grid-area: 2 / 1 / 3 / 3;
+        padding: 20px;
+    }
+
+    .filterClips, .clips
+    {
+        width: 100%;
+    }
+
+    .clips 
+    {
+        gap: 30px;
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 850px)
+{
+    .navHeaderSmall
+    {
+        display: block;
+    }
+
+    .navHeaderLarge
+    {
+        display: none;
+    }
+
+    .banner 
+    {
+        width: 90%;
+    }
+
+    .text-content
+    {
+        width: 70%;
+    }
+
+    .historics .events
+    {
+        width: 70%;
+    }
+
+    .streamers div
+    {
+        width: 70%;
+    }
+
+    .mainAssociations
+    {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 670px)
+{
+    .logo
+    {
+        left: 18%;
+    }
+
+    .navHeaderSmall
+    {
+        margin-left: 22%;
+    }
+
+    .banner 
+    {
+        width: 100%;
+    }
+
+    figure 
+    {
+        margin: 20px;
+    }
+
+    .historics .events
+    {
+        width: 80%;
+    }
+
+    .streamers div
+    {
+        width: 80%;
+    }
+
+    .mainAssociations
+    {
+        width: 70%;
+    }
+
+    .lpoMosaique figure figcaption
+    {
+        font-size: 0.9em;
+    }
+
+    .clips
+    {
+        display: flex;
+    }
+
+    .card 
+    {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 535px)
+{
+
+
+    .text-content
+    {
+        width: 80%;
+    }
+
+    .historics
+    {
+        width: 100%;
+    }
+
+    .historics .events
+    {
+        width: 100%;
+    }
+
+    .historics article
+    {
+        min-width: 90%;
+    }
+
+    .streamers div 
+    {
+        width: 100%;
+    }
+
+    .mainAssociations
+    {
+        width: 80%;
+    }
+}
