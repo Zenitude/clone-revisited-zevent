@@ -1,8 +1,6 @@
 const buttons = document.querySelectorAll('.buttonTabs button');
 const sections = document.querySelectorAll('.contentTabs section');
 
-console.log(sections);
-
 for (let i = 0 ; i < buttons.length ; i++)
 {
     buttons[i].addEventListener('click', () => {

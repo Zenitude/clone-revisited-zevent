@@ -254,7 +254,7 @@
     font-size: 0.7em;
     border: 1px solid rgba(255,255,255,0.5);
     padding: 5px;
-    margin: 0 5px;
+    margin: 5px;
 }
 
 .card:hover .desc div:nth-child(1) span
