@@ -1,4 +1,4 @@
-const filters = document.querySelectorAll('.filterClips button');
+const filters = document.querySelectorAll('.filterClips .buttonTabs');
 const clipsContainers = document.querySelectorAll('.clips');
 const page = document.querySelector('.pagination button');
 
@@ -8,6 +8,7 @@ clipsContainers.forEach(container => {
     {
         // Card
         const card = document.createElement('a');
+        card.setAttribute('href', '');
         card.setAttribute('class', 'card');
         container.appendChild(card);
     
