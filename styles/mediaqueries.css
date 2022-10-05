@@ -1,4 +1,4 @@
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1460px) {
     
     .clips 
     {
@@ -12,7 +12,7 @@
     
 }
 
-@media all and (max-width: 1280px)
+@media all and (max-width: 1305px)
 {
     .text-content
     {
@@ -32,8 +32,18 @@
 
     .slideBar
     {
-        display: none;
         position: absolute;
+        display: none;
+        z-index: 5;
+        top: 185px;
+        left: -40px;
+        width: calc(100% + 6vw);
+        height: 600px;
+    }
+
+    .filterClips .buttonSlideBar
+    {
+        display: block;
     }
 
     .containerClips main
@@ -85,7 +95,6 @@
     {
         width: 70%;
     }
-
     
     .streamers a
     {
@@ -97,9 +106,14 @@
     {
         width: 60%;
     }
+
+    .slideBar
+    {
+        left: -30px;
+    }
 }
 
-@media all and (max-width: 685px)
+@media all and (max-width: 705px)
 {
     .logo
     {
@@ -139,6 +153,11 @@
     .lpoMosaique figure figcaption
     {
         font-size: 0.9em;
+    }
+
+    .slideBar
+    {
+        left: -20px;
     }
 
     .clips
@@ -183,7 +202,6 @@
     {
         width: 100%;
     }
-
     
     .streamers a
     {
@@ -196,6 +214,16 @@
         width: 80%;
     }
 
+    .slideBar
+    {
+        left: -10px;
+    }
+
+    .filterClips
+    {
+        justify-content: center;
+    }
+
     .filterClips .buttonSlideBar
     {
         border-right: none;
@@ -204,5 +232,13 @@
     .clips .desc div:first-child span
     {
         font-size: 0.6em;
+    }
+}
+
+@media all and (max-width: 513px)
+{
+    .slideBar
+    {
+        top: 255px;
     }
 }

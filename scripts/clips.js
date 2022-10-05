@@ -3,7 +3,7 @@ const clipsContainers = document.querySelectorAll('.clips');
 const page = document.querySelector('.pagination button');
 
 clipsContainers.forEach(container => {
-
+    
     for(let i = 0 ; i < 23 ; i++)
     {
         // Card
@@ -94,3 +94,12 @@ for (let i = 0 ; i < filters.length ; i++)
 
     });
 }
+
+const buttonSlideBar = document.querySelector('.filterClips .buttonSlideBar');
+const slideBar = document.querySelector('.slideBar')
+
+buttonSlideBar.addEventListener('click', () => {
+    slideBar.classList.toggle('activeSlideBar');
+});
+
+

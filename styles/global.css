@@ -19,19 +19,36 @@ body
     margin: 0;
     background-color: var(--mainColor);
     color: var(--textPrimary);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+h1
+{
+    font-size: 4.5em;
+}
+
+h2 
+{
+    font-size: 3em;
+}
+
+h3
+{
+    font-size: 2em;
 }
 
 body::-webkit-scrollbar
 {
-    /* color: #0f0; */
     background-color: #000;
     width: 5px;
-    /* border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px; */
 }
 
 body::-webkit-scrollbar-thumb

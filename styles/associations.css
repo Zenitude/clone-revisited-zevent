@@ -96,6 +96,12 @@ h2, h3
     align-items: center;
 }
 
+.contentTabs figure:first-child img
+{
+    filter: drop-shadow(0 0 1px #fff);
+    -webkit-filter: drop-shadow(0 0 1px #fff);
+}
+
 .contentTabs img
 {
     width: 150px;
