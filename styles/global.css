@@ -1,24 +1,26 @@
 *, ::before, ::after
 {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root
 {
-    --mainColor : rgba(32,32,32,1);
-    --textPrimary : rgba(255,255,255,1);
-    --textSecondary : rgba(112,208,56,1);
-    --networksHeader : rgba(16,16,16, 1);
+    --primaryColor : rgba(32,32,32,1);
+    --secondaryColor : rgba(112,208,56,1);
+    --thirdColor : rgba(255,255,255,1);
+    --networksPrimary : rgba(16,16,16, 1);
+    --networksSecondary: rgba(255,255,255,1);
     --historicsBorder : rgba(255,255,255,0.2);
     --streamers : rgba(0,0,0,1);
 }
 
 body
 {
-    padding: 0;
-    margin: 0;
-    background-color: var(--mainColor);
-    color: var(--textPrimary);
+    min-height: 100vh;
+    background-color: var(--primaryColor);
+    color: var(--thirdColor);
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
@@ -26,23 +28,29 @@ h1,h2,h3,h4,h5,h6
 {
     font-family: 'Caveat', cursive;
     font-weight: bold;
-    padding: 0;
-    margin: 0;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
 }
 
 h1
 {
-    font-size: 4.5em;
+    font-size: calc(2.5em + 1.5vw);
 }
 
 h2 
 {
-    font-size: 3em;
+    font-size: calc(1.7rem + 1.3vw);
 }
 
 h3
 {
-    font-size: 2em;
+    font-size: calc(1.3rem + 1.1vw);
+}
+
+h4
+{
+    font-size: calc(1rem + 0.9vw);
 }
 
 body::-webkit-scrollbar
@@ -53,7 +61,7 @@ body::-webkit-scrollbar
 
 body::-webkit-scrollbar-thumb
 {
-    background-color: var(--textSecondary);
+    background-color: var(--secondaryColor);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -63,16 +71,17 @@ body::-webkit-scrollbar-thumb
 
 body a, strong, h3 
 {
-    color: var(--textSecondary);
+    color: var(--secondaryColor);
 }
 
 .container
 {
     width: 100%;
+    min-height: 100vh;
     position: relative;
 }
 
 i
 {
-    color: var(--textPrimary);
+    color: var(--thirdColor);
 }

@@ -6,34 +6,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Z Event est un projet caritatif en 2 parties, showcase qui fait office d'amorce, marathon de streaming, pour soutenir une association caritative">
         <link rel="icon" href="../resources/images/zevent/zevent-favicon.ico">
-        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" media="all" href="../styles/style.css">
         <title>ZEvent 2022 - Du 9 au 11 septembre 2022</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container containerStats">
             <header>
-                <a href="../index.html" class="logo"><img src="../resources/images/zevent/zevent-logo.png" alt="logo du Z Event, redirige vers l'accueil"></a>
-                <nav class="navHeader navHeaderSmall">
+                <a href="../index.html" class="logo"><img src="../resources/images/zevent/zevent-logo.webp" alt="logo du Z Event, redirige vers l'accueil"></a>
+                <nav class="navHeader">
                     <ul>
-                        <li><a href="../index.html"><i class="fa-solid fa-house fa-2x" aria-label="Accueil"></i></a></li>
-                        <li><a href="associations.html"><i class="fa-solid fa-building fa-2x" aria-label="Les associations"></i></a></li>
-                        <li><a href="clips.html"><i class="fa-brands fa-square-youtube fa-2x" aria-label="Les clips"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-bars-progress fa-2x" aria-label="Les stats"></i></a></li>
+                        
+                        <li><a href="../index.html"  aria-label="Accueil">
+                            <span>Accueil</span>
+                            <i class="fa-solid fa-house fa-2x"></i>
+                        </a></li>
+
+                        <li><a href="associations.html" aria-label="Les associations">
+                            <span>Les associations</span>
+                            <i class="fa-solid fa-building fa-2x"></i>
+                        </a></li>
+
+                        <li><a href="clips.html" aria-label="Les clips">
+                            <span>Les clips</span>
+                            <i class="fa-brands fa-square-youtube fa-2x"></i>
+                        </a></li>
+
+                        <li><a href="stats.html" aria-label="Les stats">
+                            <span>Les stats</span>
+                            <i class="fa-solid fa-bars-progress fa-2x"></i>
+                        </a></li>
+
                     </ul>
-                </nav>
-                
-                <nav class="navHeader navHeaderLarge">
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="associations.html">Les associations</a></li>
-                        <li><a href="clips.html">Les clips</a></li>
-                        <li><a href="#">Les stats</a></li>
-                    </ul>
+                    <div class="menu">
+                        <img src="../resources/images/header/hamburger.svg" alt="Afficher menu" class="hamburger active">
+                        <img src="../resources/images/header/close.svg" alt="Fermer menu" class="close">
+                    </div>
+                    
                 </nav>
                 <div class="networks">
-                    <a href="https://twitter.com/ZEventfr"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/zeventfr/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.reddit.com/r/ZEvent/"><i class="fa-brands fa-reddit-alien"></i></a>
+                    <a href="https://twitter.com/ZEventfr" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/zeventfr/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.reddit.com/r/ZEvent/" aria-label="Reddit"><i class="fa-brands fa-reddit-alien"></i></a>
                 </div>
             </header>
             
@@ -43,5 +56,6 @@
         </div>
 
         <script src="../scripts/fontawesome.js"></script>
+        <script src="../scripts/app.js"></script>
     </body>
 </html>

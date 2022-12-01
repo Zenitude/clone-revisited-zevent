@@ -1,0 +1,660 @@
+.containerShop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerShop main
+{
+    flex-grow: 1;
+}
+
+/* Information banner */
+
+.information
+{
+    width: 100%;
+    background-color: var(--secondaryColor);
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.information span
+{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    background-color: var(--secondaryColor);
+    text-shadow: 0 0 5px #000;
+}
+
+/* Intercom */
+
+.intercom
+{
+    width: 75px;
+    height: 75px;
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+.intercom img
+{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+}
+
+.intercom .intercomChevron, .intercomMsg
+{
+    display: none;
+}
+
+.intercom .intercomChevron.active, .intercom .intercomMsg.active
+{
+    display: block;
+}
+
+/* Products to sell global */
+
+.zTshirt, .zPlace, .zTrophy
+{
+    width: 70%;
+    max-width: 700px;
+    min-width: 280px;
+    min-height: 700px;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+}
+
+.zTshirt h2, .zPlace h2, .zTrophy h2
+{
+    color: var(--secondaryColor);
+}
+
+.zTshirt h3, .zPlace h3, .zTrophy h3
+{
+    color: var(--thirdColor);
+    text-align: start;
+}
+
+/* Products to sell content */
+.content
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Products to sell carousel */
+
+.carousel
+{
+    max-width: 350px;
+    min-width: 250px;
+    height: max-content;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 5px rgb(0,0,0);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    overflow: hidden;
+}
+
+.carousel img 
+{
+    width: 100%;
+    height: 100%;
+    animation: slide 5s infinite ease-in-out;
+    -webkit-animation: slide 5s infinite ease-in-out;
+}
+
+@keyframes slide
+{
+    0%
+    {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+
+    50%
+    {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+
+    100%
+    {
+        transform: translateX(-200%);
+        -webkit-transform: translateX(-200%);
+        -moz-transform: translateX(-200%);
+        -ms-transform: translateX(-200%);
+        -o-transform: translateX(-200%);
+    }
+}
+
+/* Products to sell price and form */
+
+.price
+{
+    max-width: 350px;
+    min-width: 260px;
+    min-height: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.price div span
+{
+    display: inline-block;
+    margin: 5px 0;
+}
+
+form label[for*="q"]
+{
+    font-family: 'Caveat', cursive;
+    font-size: calc(1.3rem + 1.1vw);
+    font-weight: bold;
+}
+
+form label[for*="q"] ~ div
+{
+    width: 100%;
+    min-width: 260px;
+    height: 50px;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 1px solid var(--thirdColor);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: inset 0 0 25px rgb(0,0,0);
+}
+
+form label[for*="q"] ~ div input
+{
+    flex-grow: 1;
+    text-align: center;
+    color: var(--thirdColor);
+    font-weight: bold;
+    background: transparent;
+    border: none;
+}
+
+form label[for*="q"] ~ div button
+{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    color: var(--thirdColor);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+form label[for*="q"] ~ div button:first-of-type
+{
+    border-radius: 25px 0 0 25px;
+    -webkit-border-radius: 25px 0 0 25px;
+    -moz-border-radius: 25px 0 0 25px;
+    -ms-border-radius: 25px 0 0 25px;
+    -o-border-radius: 25px 0 0 25px;
+}
+
+form label[for*="q"] ~ div button:last-of-type
+{
+    width: 50px;
+    border-radius: 0 25px 25px 0;
+    -webkit-border-radius: 0 25px 25px 0;
+    -moz-border-radius: 0 25px 25px 0;
+    -ms-border-radius: 0 25px 25px 0;
+    -o-border-radius: 0 25px 25px 0;
+}
+
+form .size
+{
+    margin: 5px 0;
+}
+
+form .size div
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 60px);
+}
+
+form .size .radio
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+form .size label, form .size input
+{
+    position: absolute;
+}
+
+form .size label
+{
+    
+    background: var(--thirdColor);
+    color: rgb(0,0,0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+form .size label.selected
+{
+    background: var(--secondaryColor);
+    border: 2px solid var(--thirdColor);
+}
+
+form .size input
+{
+    z-index: -1;
+}
+
+form .submitButton
+{
+    width: 100%;
+    min-width: 260px;
+    height: 50px;
+    background-color: var(--thirdColor);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: inset 0 0 25px rgb(0,0,0);
+}
+
+form .submitButton:hover
+{
+    background-color: var(--secondaryColor);
+    border: 2px solid var(--thirdColor);
+}
+
+form .submitButton:active
+{
+    box-shadow: none;
+}
+
+/* Products to sell details */
+
+.details
+{
+    width: 100%;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+details
+{
+    width: 100%;
+    border: 1px solid rgb(189, 143, 143);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+summary
+{
+    width: 100%;
+    padding: 10px 0 5px 15px;
+    background-color: var(--networksPrimary);
+    list-style-type: none; 
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+details p
+{
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.details a
+{
+    display: inline-flex;
+    align-items: center;
+}
+
+details ~ a
+{
+    margin-top: 10px;
+}
+
+.details img 
+{
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Associations */
+
+.associationsShop
+{
+    width: 70%;
+    min-height: 350px;
+    margin: 0 auto 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+}
+
+.associationsShop article
+{
+    background-color: var(--networksPrimary);
+    min-width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.associationsShop article a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.associationsShop article img
+{
+    width: 150px;
+    height: 150px;
+}
+
+.associationsShop article a img
+{
+    width: 15px;
+    height: 15px;
+    color : var(--secondaryColor)
+}
+
+/* Help */
+
+.help
+{
+    width: 70%;
+    min-width: 260px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px rgb(0,0,0);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.help .containerText
+{
+    width: 50%;
+    min-width: 260px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--secondaryColor);
+    border-radius: 25px 0 0 25px;
+    -webkit-border-radius: 25px 0 0 25px;
+    -moz-border-radius: 25px 0 0 25px;
+    -ms-border-radius: 25px 0 0 25px;
+    -o-border-radius: 25px 0 0 25px;
+}
+
+.help .containerText h2, .help .containerText p
+{
+    filter: drop-shadow(0 0 2px rgb(0,0,0));
+    -webkit-filter: drop-shadow(0 0 2px rgb(0,0,0));
+}
+
+.help .containerText a
+{
+    align-self: flex-start;
+    text-decoration: none;
+    background-color: var(--thirdColor);
+    filter: drop-shadow(0 0 1px rgb(0,0,0));
+    -webkit-filter: drop-shadow(0 0 1px rgb(0,0,0));
+    color: rgb(0,0,0);
+    padding: 10px 15px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.help .containerText a span
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    filter: drop-shadow(0 0 1px rgb(0,0,0));
+    -webkit-filter: drop-shadow(0 0 1px rgb(0,0,0));
+}
+
+.help .containerText a:hover
+{
+    background-color: rgb(0,0,0);
+}
+
+.help .containerText a:hover span
+{
+    color: var(--secondaryColor);
+}
+
+.help .containerImg
+{
+    width: 50%;
+    min-width: 260px;
+    min-height: 350px;
+    max-height: 550px;
+    background-image: url('../resources/images/shop/help/help.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 25px 25px 0;
+    -webkit-border-radius: 0 25px 25px 0;
+    -moz-border-radius: 0 25px 25px 0;
+    -ms-border-radius: 0 25px 25px 0;
+    -o-border-radius: 0 25px 25px 0;
+}
+
+/* Footer */
+footer
+{
+    width: 100%;
+    background-color: var(--networksPrimary);
+    border-top: 1px solid var(--historicsBorder);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+/* Useful Links */
+footer .usefulLinks
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .legals, footer .thanks, footer .logoZevent
+{
+    width: 33%;
+    min-width: 260px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .networks
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .networks a
+{
+    text-decoration: none;
+    border: none;
+}
+
+/* Links */
+
+footer .links
+{
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Legals */
+
+footer .legals h3
+{
+    text-align: start;
+}
+
+footer .legals ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .legals a
+{
+    color: var(--thirdColor);
+    text-decoration: none;
+}
+
+/* Logo ZEvent */
+
+footer .logoZEvent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logoZEvent img
+{
+    width: 70%;
+}
+
+/* Logo ZEvent */
+
+footer .paymentAndCopy
+{
+    width: 100%;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--historicsBorder);
+    gap: 10px;
+}
+
+footer .payment, footer .copyright
+{
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .payment
+{
+    gap: 10px;
+}

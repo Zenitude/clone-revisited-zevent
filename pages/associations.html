@@ -6,34 +6,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Z Event est un projet caritatif en 2 parties, showcase qui fait office d'amorce, marathon de streaming, pour soutenir une association caritative">
         <link rel="icon" href="../resources/images/zevent/zevent-favicon.ico">
-        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" media="all" href="../styles/style.css">
         <title>ZEvent 2022 - Du 9 au 11 septembre 2022</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container containerAssociations">
             <header>
-                <a href="#" class="logo"><img src="../resources/images/zevent/zevent-logo.png" alt="logo du Z Event, redirige vers l'accueil"></a>
-                <nav class="navHeader navHeaderSmall">
+                <a href="../index.html" class="logo"><img src="../resources/images/zevent/zevent-logo.webp" alt="logo du Z Event, redirige vers l'accueil"></a>
+                <nav class="navHeader">
                     <ul>
-                        <li><a href="../index.html"><i class="fa-solid fa-house fa-2x" aria-label="Accueil"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-building fa-2x" aria-label="Les associations"></i></a></li>
-                        <li><a href="clips.html"><i class="fa-brands fa-square-youtube fa-2x" aria-label="Les clips"></i></a></li>
-                        <li><a href="stats.html"><i class="fa-solid fa-bars-progress fa-2x" aria-label="Les Stats"></i></a></li>
+                        
+                        <li><a href="../index.html" aria-label="Accueil">
+                            <span>Accueil</span>
+                            <i class="fa-solid fa-house fa-2x"></i>
+                        </a></li>
+
+                        <li><a href="associations.html" aria-label="Les associations">
+                            <span>Les associations</span>
+                            <i class="fa-solid fa-building fa-2x"></i>
+                        </a></li>
+
+                        <li><a href="clips.html" aria-label="Les clips">
+                            <span>Les clips</span>
+                            <i class="fa-brands fa-square-youtube fa-2x"></i>
+                        </a></li>
+
+                        <li><a href="stats.html" aria-label="Les stats">
+                            <span>Les stats</span>
+                            <i class="fa-solid fa-bars-progress fa-2x"></i>
+                        </a></li>
+
                     </ul>
-                </nav>
-                
-                <nav class="navHeader navHeaderLarge">
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="#">Les associations</a></li>
-                        <li><a href="clips.html">Les clips</a></li>
-                        <li><a href="https://stats.zevent.fr/d/GKNl4IMVk/zevent?orgId=2">Les stats</a></li>
-                    </ul>
+                    <div class="menu">
+                        <img src="../resources/images/header/hamburger.svg" alt="Afficher menu" class="hamburger active">
+                        <img src="../resources/images/header/close.svg" alt="Fermer menu" class="close">
+                    </div>
+                    
                 </nav>
                 <div class="networks">
-                    <a href="https://twitter.com/ZEventfr"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/zeventfr/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.reddit.com/r/ZEvent/"><i class="fa-brands fa-reddit-alien"></i></a>
+                    <a href="https://twitter.com/ZEventfr" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/zeventfr/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.reddit.com/r/ZEvent/" aria-label="Reddit"><i class="fa-brands fa-reddit-alien"></i></a>
                 </div>
             </header>
 
@@ -153,10 +166,10 @@
                     <section id="fondationDeFrance">
 
                         <figure>
-                            <img src="../resources/images/associations/fdf.png" alt="logo Fondation de France">
+                            <img src="../resources/images/associations/fdf.webp" alt="logo Fondation de France">
                         </figure>
                         <h2>Fondation de France</h2>
-                        <div><a href="https://www.fondationdefrance.org/fr/" class="linkSite">Site</a></div>
+                        <div><a href="https://www.fondationdefrance.org/fr/" class="linkSite"><span>Site</span></a></div>
                         <p>Pour le ZEvent 2022, la Fondation de France assure la collecte des dons et le reversement aux 4 associations bénéficiaires : LPO, Sea Shepherd, The SeaCleaners et WWF.</p>
 
                         <article>
@@ -185,10 +198,10 @@
                     <section id="seaShepherd">
 
                         <figure>
-                            <img src="../resources/images/associations/seasheperd.png" alt="logo de Sea Shepherd">
+                            <img src="../resources/images/associations/seasheperd.webp" alt="logo de Sea Shepherd">
                         </figure>
                         <h2>Sea Shepherd</h2>
-                        <div><a href="https://seashepherd.fr/" class="linkSite">Site</a></div>
+                        <div><a href="https://seashepherd.fr/" class="linkSite"><span>Site</span></a></div>
                         <p>Fondée en 1977 par le capitaine Paul Watson, SEA SHEPHERD est l'ONG de défense des océans la plus combative au monde.</p>
                         <p>L'océan est un enjeu écologique majeur ; sa protection, un défi particulièrement important notamment en France au regard de l’énorme territoire maritime français, le deuxième plus vaste au monde avec près de 11 millions de kilomètres carrés.</p>
                         <video src="" controls></video>
@@ -198,20 +211,20 @@
 
                             <p>Sea Shepherd défend activement l'océan et toutes les formes de vie marine. L'ONG a réussi à développer la seule Marine du monde entièrement dédiée à la protection des écosystèmes marins. Entièrement financée grâce aux dons des citoyen(ne)s, Sea Shepherd est indépendante des gouvernements. Depuis 45 ans, son cœur de métier est la lutee contre le braconnage et la surpêche mais également, la sensibilisation du grand public à l'ensemble des menaces qui pèsent sur l'océan les animaux marins.</p>
                             
-                            <article>
-                                <h4>95%</h4>
+                            <div class="associationCard">
+                                <strong>95%</strong>
                                 <p>des dons affectés aux missions de terrain</p>
-                            </article>
+                            </div>
 
-                            <article>
-                                <h4>98%</h4>
+                            <div class="associationCard">
+                                <strong>98%</strong>
                                 <p>de bénévoles</p>
-                            </article>
+                            </div>
 
-                            <article>
-                                <h4>8 mois</h4>
+                            <div class="associationCard">
+                                <strong>8 mois</strong>
                                 <p>de missions par an pour l'antenne française</p>
-                            </article>
+                            </div>
                         </article>
 
                         <article>
@@ -254,10 +267,10 @@
                     <section id="lpo">
                         
                         <figure>
-                            <img src="../resources/images/associations/lpo.png" alt="logo de LPO">
+                            <img src="../resources/images/associations/lpo.webp" alt="logo de LPO">
                         </figure>
                         <h2>LPO : sauvons la nature ensemble</h2>
-                        <div><a href="https://www.lpo.fr/" class="linkSite" class="linkSite">Site</a></div>
+                        <div><a href="https://www.lpo.fr/" class="linkSite" class="linkSite"><span>Site</span></a></div>
 
                         <article>
                             <h3>On entend dire que la biodiversité s’effondre, mais qu’est-ce que ça veut dire concrètement ?</h3>
@@ -274,31 +287,31 @@
                         <article>
                             <h3>La LPO agit concrètement au plus près du terrain avec l’aide des citoyens</h3>
 
-                                <article>
-                                    <h4>Par la connaissance</h4>
+                                <div class="associationCard">
+                                    <strong>Par la connaissance</strong>
                                     <p>grâce notamment aux sciences participatives, la LPO rassemble et analyse les données naturalistes depuis plusieurs dizaines d’années, ce qui permet de suivre l’évolution de l’état de conservation des espèces et de guider les priorités d’action.</p>
-                                </article>
+                                </div>
 
-                                <article>
-                                    <h4>Par la sauvegarde des espèces</h4>
+                                <div class="associationCard">
+                                    <strong>Par la sauvegarde des espèces</strong>
                                     <p>
                                         la LPO a créé et gère des centres de soins pour la faune sauvage où sont recueillis et soignés des milliers d’animaux blessés avant d’être relâchés dans la nature. La LPO mène également des programmes de protection d’espèces menacées et milite contre les abus de la chasse.
                                     </p>
-                                </article>
+                                </div>
 
-                                <article>
-                                    <h4>Par la protection des espaces</h4>
+                                <div class="associationCard">
+                                    <strong>Par la protection des espaces</strong>
                                     <p>
                                         la LPO acquiert et préserve des espaces naturels protégés, organise des chantiers participatifs avec ses bénévoles, promeut le développement durable et lutte contre la dégradation des habitats par l’artificialisation, la surexploitation des ressources et les pollutions.
                                     </p>
-                                </article>
+                                </div>
 
-                                <article>
-                                    <h4>Par l’éducation et la mobilisation</h4>
+                                <div class="associationCard">
+                                    <strong>Par l’éducation et la mobilisation</strong>
                                     <p>
                                         la LPO intervient auprès de tous les publics pour que chacun puisse agir concrètement à son échelle pour la sauvegarde de la biodiversité, par exemple à travers les programmes Refuges LPO et Nature en ville.
                                     </p>
-                                </article>
+                                </div>
 
                         </article>
 
@@ -315,13 +328,13 @@
 
                             <p>100€ c’est le coût d’acquisition de 250 m² d’espace naturel ainsi protégé</p>
 
-                            <div class="lpoMosaique">
+                            <div id="lpoMosaique">
                                 <figure>
-                                    <img src="../resources/images/associations/loutre.jpg" alt="photo d'une loutre">
+                                    <img src="../resources/images/associations/loutre.webp" alt="photo d'une loutre">
                                     <figcaption>CDSLPO Aquitaine</figcaption>
                                 </figure>
                                 <figure>
-                                    <img src="../resources/images/associations/rapace.jpg" alt="photo d'un rapace">
+                                    <img src="../resources/images/associations/rapace.webp" alt="photo d'un rapace">
                                     <figcaption>Bruno Berthémy</figcaption>
                                 </figure>
                             </div>
@@ -336,7 +349,7 @@
                             
                             <p>La LPO souhaite à tous les participants un excellent week-end de divertissement utile à la planète. N’hésitez pas à venir à notre rencontre pour découvrir les valeurs et les actions de la LPO !</p>
                             
-                            <div>
+                            <div id="aboutLpo">
                                 <a href="https://www.lpo.fr/la-lpo-en-actions">En savoir plus sur les actions de la LPO</a>
                                 <a href="https://www.lpo.fr/decouvrir-la-nature">Découvrir la nature avec la LPO</a>
                                 <a href="https://www.lpo.fr/s-engager-a-nos-cotes">S’engager aux côtés de la LPO</a>
@@ -347,17 +360,17 @@
                     
                     <section id="wwf">
                         <figure>
-                            <img src="../resources/images/associations/wwf.png" alt="logo de WWF">
+                            <img src="../resources/images/associations/wwf.webp" alt="logo de WWF">
                         </figure>
                         <h2>WWF</h2>
-                        <div><a href="https://www.wwf.fr/" class="linkSite">Site</a></div>
+                        <div><a href="https://www.wwf.fr/" class="linkSite"><span>Site</span></a></div>
 
                         <p>
                             Le WWF c’est une (très) grosse équipe de pandas qui travaille dans plus de 100 pays partout dans le monde pour protéger la planète, c’est-à-dire protéger la nature et tous ses êtres vivants. Une mission ambitieuse et vitale qui nécessite d’agir sur tous les fronts : climat, énergie, alimentation, forêt, vie sauvage, océans. Nous travaillons au plus près du terrain pour préserver cette maison que nous partageons toutes et tous. Auprès des populations locales nous nous mobilisons dans des programmes de terrain afin de maintenir et protéger les tortues de Nouvelle-Calédonie, les mangroves de Madagascar, la forêt amazonienne de Guyane, les éléphants d’Afrique etc. Une diversité d’actions complétée par de la sensibilisation auprès du public, des politiques, des acteurs économiques mais aussi d’analyse et de publication de données scientifiques.
                         </p>
 
                         <video src="" controls></video>
-                        <div><a href="https://www.wwf.fr/qui-sommes-nous" class="linkSite">En savoir plus sur WWF</a></div>
+                        <div><a href="https://www.wwf.fr/qui-sommes-nous" class="linkSite"><span>En savoir plus sur WWF</span></a></div>
 
                         <article>
                             <h3>Que faisons-nous ?</h3>
@@ -373,27 +386,27 @@
                             </ul>
 
                             <div>
-                                <a href="https://www.wwf.fr/champs-daction" class="linkSite">Nos champs d'action</a>
-                                <a href="https://www.wwf.fr/sengager-ensemble" class="linkSite">S'engager ensemble</a>
+                                <a href="https://www.wwf.fr/champs-daction" class="linkSite"><span>Nos champs d'action</span></a>
+                                <a href="https://www.wwf.fr/sengager-ensemble" class="linkSite"><span>S'engager ensemble</span></a>
                             </div>
 
-                            <article>
-                                <h4>68%</h4>
+                            <div class="associationCard">
+                                <strong>68%</strong>
                                 <p>La biodiversité mondiale décline à une vitesse fulgurante. En seulement 50 ans, le nombre de mammifères, d’oiseaux, de poissons, de reptiles et d’amphibiens a diminué de 68% sur la Terre. En cause, la déforestation et la surexploitation des terres, l’utilisation non durable des ressources naturelles, le braconnage et le commerce illégal des espèces sauvages ainsi que les changements climatiques et la pollution exercent une pression sans précédent sur la nature. Un nouvel état de santé de la biodiversité dans le monde sera publié par le WWF en octobre 2022.</p>
-                            </article>
+                            </div>
 
-                            <article>
-                                <h4>10 millions</h4>
+                            <div class="associationCard">
+                                <strong>10 millions</strong>
                                 <p>Dix millions d’hectares (soit l’équivalent de la surface du Portugal ou de plus de 14 millions de terrains de football) de forêts disparaissent chaque année, principalement en zone tropicale. Pourtant, les forêts abritent 80% de la biodiversité terrestre et permettent de subvenir aux besoins de 1,6 milliard de personnes.</p>
-                            </article>
+                            </div>
 
-                            <article>
-                                <h4>41 000</h4>
+                            <div class="associationCard">
+                                <strong>41 000</strong>
                                 <p>Aujourd’hui en 2022, 41000 espèces d’animaux et de plantes sauvages sont menacées. Ce chiffre est établi par l'Union internationale pour la conservation de la nature (UICN). Le WWF se mobilise pour la vie sauvage en choisissant de protéger les espèces les plus emblématiques et les plus vulnérables comme les éléphants, les tigres, les lynx etc. Nous nous concentrons sur celles qui jouent un rôle majeur au sein des écosystèmes naturels. En les protégeant, nous sauvegardons aussi les espèces avec lesquelles elles cohabitent et les paysages ou les milieux qui les accueillent.</p>
-                            </article>
+                            </div>
 
                             <div>
-                                <a href="https://www.wwf.fr/agir-au-quotidien" class="linkSite">Agir au quotidien</a>
+                                <a href="https://www.wwf.fr/agir-au-quotidien" class="linkSite"><span>Agir au quotidien</span></a>
                             </div>
 
                         </article>
@@ -447,10 +460,10 @@
                     
                     <section id="timeForThePlanet">
                         <figure>
-                            <img src="../resources/images/associations/tftp.png" alt="logo de Time For The Planet">
+                            <img src="../resources/images/associations/tftp.webp" alt="logo de Time For The Planet">
                         </figure>
                         <h2>Time For The Planet</h2>
-                        <div><a href="https://join-time.com/fr" class="linkSite">Site</a></div>
+                        <div><a href="https://join-time.com/fr" class="linkSite"><span>Site</span></a></div>
                         
                         <p>Time for the Planet® est un mouvement citoyen né en décembre 2019.</p>
                         
@@ -476,10 +489,10 @@
                     <section id="theSeaCleaners">
 
                         <figure>
-                            <img src="../resources/images/associations/theseacleaners.png" alt="logo de The Sea Cleaners">
+                            <img src="../resources/images/associations/theseacleaners.webp" alt="logo de The Sea Cleaners">
                         </figure>
                         <h2>The SeaCleaners : Mobilisation générale pour débarasser les océans de la pollution plastique</h2>
-                        <div><a href="https://theseacleaners.org/" class="linkSite">Site</a></div>
+                        <div><a href="https://theseacleaners.org/" class="linkSite"><span>Site</span></a></div>
                         
                         <p>Chaque année, 9 à 14 millions de tonnes de déchets plastiques sont déversées dans les océans. 80% de cette pollution provient de la terre, acheminée par les fleuves et les rivières. Concrètement, cela veut dire que, pendant les 3 jours du ZEvent, plus de 115 000 tonnes de plastique partiront à la mer. L’équivalent d’un camion poubelle de 17 tonnes chaque minute !</p>
                         
@@ -522,20 +535,20 @@
                                 3 missions ont été identifiées pour bénéficier des fonds de ZEvent :
                             </p>
 
-                            <article>
-                                <h4>Avec 1€</h4>
+                            <div class="associationCard">
+                                <strong>Avec 1€</strong>
                                 <p>Tu participes à nos actions de sensibilisation à destination des communautés et des jeunes pour réduire les déchets à la source.</p>
-                            </article>
+                            </div>
 
-                            <article>
-                                <h4>Avec 3€</h4>
+                            <div class="associationCard">
+                                <strong>Avec 3€</strong>
                                 <p>Tu participes au déploiement opérationnel de solutions de dépollution innovantes, dont nos bateaux MOBULA qui interceptent les déchets avant qu’ils atteignent l’océan, dans les rivières, les fleuves, les mangroves, etc.</p>
-                            </article>
+                            </div>
 
-                            <article>
-                                <h4>Avec 10€</h4>
+                            <div class="associationCard">
+                                <strong>Avec 10€</strong>
                                 <p>Tu participes au financement du développement du MANTA, le bateau emblématique de la lutte contre la pollution plastique océanique qui prendra la mer en 2025.</p>
-                            </article>
+                            </div>
 
                         </article>
 
@@ -557,6 +570,6 @@
         </div>
 
         <script src="../scripts/fontawesome.js"></script>
-        <script src="../scripts/associations.js"></script>
+        <script src="../scripts/app.js"></script>
     </body>
 </html>

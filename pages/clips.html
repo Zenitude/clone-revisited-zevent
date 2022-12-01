@@ -12,47 +12,60 @@
     <body>
         <div class="container containerClips">
             <header>
-                <a href="../index.html" class="logo"><img src="../resources/images/zevent/zevent-logo.png" alt="logo du Z Event, redirige vers l'accueil"></a>
-                <nav class="navHeader navHeaderSmall">
+                <a href="../index.html" class="logo"><img src="../resources/images/zevent/zevent-logo.webp" alt="logo du Z Event, redirige vers l'accueil"></a>
+                <nav class="navHeader">
                     <ul>
-                        <li><a href="../index.html"><i class="fa-solid fa-house fa-2x" aria-label="Accueil"></i></a></li>
-                        <li><a href="associations.html"><i class="fa-solid fa-building fa-2x" aria-label="Les associations"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-square-youtube fa-2x" aria-label="Les clips"></i></a></li>
-                        <li><a href="stats.html"><i class="fa-solid fa-bars-progress fa-2x" aria-label="Les stats"></i></a></li>
+                        
+                        <li><a href="../index.html" aria-label="Accueil">
+                            <span>Accueil</span>
+                            <i class="fa-solid fa-house fa-2x"></i>
+                        </a></li>
+
+                        <li><a href="associations.html" aria-label="Les associations">
+                            <span>Les associations</span>
+                            <i class="fa-solid fa-building fa-2x"></i>
+                        </a></li>
+
+                        <li><a href="clips.html" aria-label="Les clips">
+                            <span>Les clips</span>
+                            <i class="fa-brands fa-square-youtube fa-2x"></i>
+                        </a></li>
+
+                        <li><a href="stats.html" aria-label="Les stats">
+                            <span>Les stats</span>
+                            <i class="fa-solid fa-bars-progress fa-2x"></i>
+                        </a></li>
+                        
                     </ul>
-                </nav>
-                
-                <nav class="navHeader navHeaderLarge">
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="associations.html">Les associations</a></li>
-                        <li><a href="#">Les clips</a></li>
-                        <li><a href="stats.html">Les stats</a></li>
-                    </ul>
+                    <div class="menu">
+                        <img src="../resources/images/header/hamburger.svg" alt="Afficher menu" class="hamburger active">
+                        <img src="../resources/images/header/close.svg" alt="Fermer menu" class="close">
+                    </div>
+                    
                 </nav>
                 <div class="networks">
-                    <a href="https://twitter.com/ZEventfr"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/zeventfr/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.reddit.com/r/ZEvent/"><i class="fa-brands fa-reddit-alien"></i></a>
+                    <a href="https://twitter.com/ZEventfr" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/zeventfr/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.reddit.com/r/ZEvent/" aria-label="Reddit"><i class="fa-brands fa-reddit-alien"></i></a>
                 </div>
             </header>
 
             <nav class="slideBar">
                 <ul>
-                    <li><a href=""><i class="fa-solid fa-hand-holding-heart"></i> Faire un don</a></li>
-                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i> La boutique</a></li>
-                    <li><a href="">Tops</a></li>
-                    <li><a href="">Best of</a></li>
-                    <li><a href="">Tops par streamers</a></li>
-                    <li><a href="">Récents</a></li>
-                    <li><a href="">Streamers</a></li>
-                    <li><a href="">Jeux</a></li>
+                    <li><a href="clips.html"><i class="fa-solid fa-hand-holding-heart"></i> Faire un don</a></li>
+                    <li><a href="shop.html"><i class="fa-solid fa-cart-shopping"></i> La boutique</a></li>
+                    <li><a href="clips.html">Tops</a></li>
+                    <li><a href="clips.html">Best of</a></li>
+                    <li><a href="clips.html">Tops par streamers</a></li>
+                    <li><a href="clips.html">Récents</a></li>
+                    <li><a href="clips.html">Streamers</a></li>
+                    <li><a href="clips.html">Jeux</a></li>
                 </ul>
             </nav>
 
             <main>
                 <div class="filterClips">
-                    <button class="buttonSlideBar"><i class="fa-solid fa-bars fa-2x"></i></button>
+                    <button class="buttonSlideBar" aria-label="Afficher slidebar"><i class="fa-solid fa-bars fa-2x"></i></button>
                     <button class="buttonTabs activeClips">Tout le week-end</button>
                     <button class="buttonTabs">Vendredi</button>
                     <button class="buttonTabs">Samedi</button>
@@ -67,7 +80,7 @@
 
                 <div class="clips clipsWeekEnd activeTabs">
 
-                    <a href="" class="card">
+                    <a href="https://www.youtube.com" class="card">
                         <div class="video">
                             <video src="" controls></video>
                         </div>
@@ -85,7 +98,7 @@
 
                 <div class="clips clipsFriday">
 
-                    <a href="" class="card">
+                    <a href="https://www.youtube.com" class="card">
                         <div class="video">
                             <video src="" controls></video>
                         </div>
@@ -103,7 +116,7 @@
 
                 <div class="clips clipSaturday">
 
-                    <a href="" class="card">
+                    <a href="https://www.youtube.com" class="card">
                         <div class="video">
                             <video src="" controls></video>
                         </div>
@@ -121,7 +134,7 @@
 
                 <div class="clips clipsSunday">
 
-                    <a href="" class="card">
+                    <a href="https://www.youtube.com" class="card">
                         <div class="video">
                             <video src="" controls></video>
                         </div>
@@ -141,6 +154,6 @@
             
         </div>
         <script src="../scripts/fontawesome.js"></script>
-        <script src="../scripts/clips.js"></script>
+        <script src="../scripts/app.js"></script>
     </body>
 </html>

@@ -3,10 +3,18 @@
 .mainAssociations
 {
     width: 50%;
+    min-width: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.mainAssociations a span
+{
+    filter: drop-shadow(0 0 2px rgb(0,0,0));
+    -webkit-filter: drop-shadow(0 0 2px rgb(0,0,0));
+    font-size: 0.9rem;
 }
 
 .contentTabs
@@ -23,14 +31,16 @@
 {
     text-align: center;
 }
+
 .mainAssociations .buttonTabs button
 {
     background-color: transparent;
     min-width: 75px;
     height: 40px;
     margin: 5px;
-    color: var(--textPrimary);
-    border-color: var(--textPrimary);
+    padding: 0 5px;
+    color: var(--thirdColor);
+    border-color: var(--thirdColor);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -38,26 +48,20 @@
     -o-border-radius: 5px;
 }
 
-/* Titles */
-
-h2, h3
-{
-    text-align: center;
-}
-
-.contentTabs article article h4
-{
-    font-size: 2em;
-    margin: 0;
-    padding: 0;
-    text-align: start;
-}
-
 /* Tabs */
+
+.contentTabs
+{
+    width: 100%;
+}
 
 .contentTabs section
 {
     display: none;
+    width: 100%;
+    min-width: 260px;
+    padding: 0 15px;
+
 }
 
 .contentTabs section.activeTabs
@@ -67,8 +71,9 @@ h2, h3
 
 /* Associations in numbers */
 
-.contentTabs article article
+.associationCard
 {
+    text-align: start;
     margin: 15px 0;
     padding: 15px;
     border: 1px solid #fff;
@@ -79,10 +84,16 @@ h2, h3
     -o-border-radius: 5px;
 }
 
-.contentTabs article article p
+.associationCard strong
 {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    text-align: start;
+    font-size: 2rem;
+}
+
+.associationCard p
+{
+    width: 100%;
 }
 
 /* Images */
@@ -107,19 +118,26 @@ h2, h3
     width: 150px;
 }
 
-.lpoMosaique figure
+#lpoMosaique figure
 {
     flex-direction: column;
 }
 
-.lpoMosaique figure
+#lpoMosaique figure figcaption
+{
+    font-size: calc(0.4em + 1vw);
+}
+
+#lpoMosaique figure
 {
     width: 50%;
 }
 
-.lpoMosaique figure img
+#lpoMosaique figure img
 {
     width: 100%;
+    filter: none;
+    -webkit-filter: none;
 }
 
 /* Videos */
@@ -142,9 +160,9 @@ h2, h3
     padding: 0 15px;
     font-size: 0.8em;
     font-weight: bold;
-    background-color: var(--textSecondary);
-    color: var(--textPrimary);
-    margin: 0px auto;
+    background-color: var(--secondaryColor);
+    color: var(--thirdColor);
+    margin: 0 auto;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -169,4 +187,5 @@ h2, h3
 .contentTabs li
 {
     margin: 15px 0;
+    list-style-position: inside;
 }
