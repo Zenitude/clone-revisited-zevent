@@ -150,10 +150,11 @@
 
 /* Links */
 
-.linkSite
+.links
 {
-    display: inline-block;
+    display: block;
     text-decoration: none;
+    text-align: center;
     max-width: 200px;
     height: 40px;
     line-height: 40px;
@@ -168,6 +169,11 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+.site
+{
+    max-width: 70px;
 }
 
 .contentTabs section div

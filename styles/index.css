@@ -71,7 +71,7 @@ main
     gap: 20px;
 }
 
-.historics article
+.historics .events .event
 {
     display: flex;
     flex-direction: column;
@@ -88,12 +88,12 @@ main
     -o-border-radius: 5px;
 }
 
-.historics article:last-of-type
+.historics .event:last-of-type
 {
     background-color: var(--secondaryColor);
 }
 
-.historics article:last-of-type div
+.historics .event:last-of-type div
 {
     filter: drop-shadow(0 0 2px rgb(0,0,0));
     -webkit-filter:drop-shadow(0 0 2px rgb(0,0,0));

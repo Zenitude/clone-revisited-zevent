@@ -45,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     right: 10px;
     bottom: 20px;
 }
@@ -126,6 +126,11 @@
     height: 100%;
     animation: slide 5s infinite ease-in-out;
     -webkit-animation: slide 5s infinite ease-in-out;
+}
+
+.carousel figcaption
+{
+    opacity: 0   ;
 }
 
 @keyframes slide
@@ -589,7 +594,7 @@ footer .networks a
 
 /* Links */
 
-footer .links
+footer .linksShop
 {
     width: 100%;
     min-height: 150px;
