@@ -115,6 +115,11 @@ header a
     justify-content: center;
 }
 
+.navHeader a:hover, [aria-current="page"]
+{
+    color: var(--secondaryColor);
+}
+
 /* Links networks */
 
 .networks

@@ -185,5 +185,12 @@ if(document.querySelector('.containerShop'))
     for(let i = 0 ; i < quantityTab.length ; i++) {
         moreTab[i].addEventListener('click', () => quantityTab[i].value >= 20 ? quantityTab[i].value = 20 : quantityTab[i].value++);
         lessTab[i].addEventListener('click', () => quantityTab[i].value <= 1 ? quantityTab[i].value = 1 : quantityTab[i].value--);
+    
+        quantityTab[i].addEventListener('input', () => {
+            quantityTab[i].value >= 20 ? quantityTab[i].value = 20 : quantityTab[i].value = quantityTab[i].value;
+            quantityTab[i].value <= 1 ? quantityTab[i].value = 1 : quantityTab[i].value = quantityTab[i].value;
+        })
+    
     }
+
 }
